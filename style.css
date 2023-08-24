@@ -226,3 +226,20 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 28rem) {
+  .container{
+    .frame {
+      .bottom {
+        padding: 1.5rem;
+        .buttons {
+          .key {
+            font-size: 1.25rem;
+            width: 2.75rem;
+            height: 2.75rem;
+          }
+        }
+      }
+    }
+  }
+}
