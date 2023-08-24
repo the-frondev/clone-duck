@@ -34,7 +34,7 @@ body {
   align-items: center;
   .frame {
     width: max-content;
-    height: 90svh;
+    height: 95dvh;
     box-sizing: border-box;
     background: var(--blue-nokia);
     padding: 1rem;
