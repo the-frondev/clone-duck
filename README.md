@@ -4,3 +4,5 @@
 A medida que consume más hongos, la línea de patos se vuelve más larga y se mueve de forma más veloz, aumentando el riesgo de chocar contra los límites de la sala e incluso contra la propia línea de patos clones.
 
 Tu objetivo es consumir la mayor cantidad de hongos posible, pero debes tener cuidado, ya que si chocas contra los límites de la sala o contra la línea de clones, el juego termina. ¡Demuestra tus habilidades para guiar a esta línea de patos en constante cambio y establece el récord más alto!
+
+JUEGALO AQUÍ -> https://the-frondev.github.io/clone-duck/
