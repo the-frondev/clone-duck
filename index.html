@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone PATO</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="frame">
+      <div class="top">
+        <div class="speaker">
+          <div class="hole"></div>
+          <div class="hole"></div>
+          <div class="hole"></div>
+        </div>
+        <div class="logo">FRONTDEV</div>
+        <div class="screen">
+          <div class="home">
+            <img id="game-name" src="./assets/clone_pato.png" alt="Clone Pato">
+            <p>by the_frontdev</p>
+            <img id="game-img" src="./assets/clone_pato_img.png" alt="clone pato">
+          </div>
+          <div class="difficulty hidden">
+            <img id="game-name" src="./assets/clone_pato.png" alt="Clone Pato">
+            <p>Elige la dificultad</p>
+            <div class="difficulty-item selected" data-difficulty="500">Toy Chiquito</div>
+            <div class="difficulty-item" data-difficulty="350">Lo jugué de niño</div>
+            <div class="difficulty-item" data-difficulty="200">Soy un pato</div>
+          </div>
+          <div class="game hidden">
+            <div class="game-details">
+              <p class="score">Score: <span id="score">0</span></p>
+              <p class="high-score">High Score: <span id="high-score">0</span></p>
+            </div>
+            <div class="play-board">
+            </div>
+          </div>
+          <div class="game-over hidden">
+            <img src="./assets/skull.svg" alt="Game Over">
+            <p class="game-over-title">GAME OVER</p>
+            <p class="game-over-score">Tu puntuación fue: <span id="go-score"></span></p>
+          </div>
+        </div>
+        <p id="model">N-3310</p>
+        <div class="oval">
+          <button class="key" data-key="Enter">
+            <div id="enter-symbol"></div>
+          </button>
+        </div>
+      </div>
+      <div class="sound-buttons">
+        <button id="sound-on">
+          <img src="./assets/icons8-voice-48.png" alt="sound-on">
+        </button>
+        <button id="sound-off">
+          <img src="./assets/icons8-sound-off-48.png" alt="sound-off">
+        </button>
+      </div>
+      <div class="bottom">
+        <div class="buttons">
+          <button class="key" data-key="ArrowUp">&#8593;</button>
+          <div class="left-right">
+            <button class="key" data-key="ArrowLeft">&#8592;</button>
+            <button class="key" data-key="ArrowRight">&#8594;</button>
+          </div>
+          <button class="key" data-key="ArrowDown">&#8595;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="difficulty" data-delay="500" style="display:none;"></div>
+</body>
+</html>
