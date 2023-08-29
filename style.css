@@ -35,7 +35,7 @@ body {
   .frame {
     width: max-content;
     height: 95dvh;
-    max-height: 47rem;
+    max-height: 50rem;
     box-sizing: border-box;
     background: var(--blue-nokia);
     padding: 1rem;
