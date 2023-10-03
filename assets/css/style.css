@@ -28,6 +28,10 @@ body {
   align-items: center;
   box-sizing: border-box;
   padding: 4rem 0;
+
+  .hero {
+    width: min(100%, 56rem);
+  }
   
   .button {
     font-family: 'Aldrich', sans-serif;
@@ -60,10 +64,10 @@ body {
       box-sizing: border-box;
     }
     .game-info-img, .how-to-play {
-      order: 1;
+      order: 0;
     }
     .game-info, .how-to-play-img {
-      order: 2;
+      order: 1;
     }
     .section-title {
       font-family: 'Nokia', sans-serif;
@@ -95,11 +99,11 @@ body {
     font-size: 1rem;
     color: var(--light);
     text-align: center;
-    &>a {
+    & a {
       text-decoration: none;
       color: var(--green);
     }
-    &>span {
+    & span {
       color: var(--bronze);
     }
   }
@@ -150,5 +154,48 @@ footer {
       text-decoration: none;
       color: var(--green);
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .section {
+      width: 90%;
+      flex-direction: column;
+      .game-info-img {
+        order: 1;
+      }
+      .game-info {
+        order: 0;
+      }
+      .game-info, .how-to-play {
+        width: 100%;
+      }
+    }
+    .screens {
+      overflow: hidden;
+      height: 21rem;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin: 2rem auto;
+      .screen {
+        width: 7.5rem;
+        margin: 0 1rem;
+        animation: slide 8s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(120%);
+  }
+  50% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(120%);
   }
 }

@@ -7,16 +7,16 @@
   --blue-nokia-dark: #283b5b;
   --gray: #DDDDDD;
   --screen: #97CF00;
-  --duck1L: url('./assets/duckL.svg');
-  --duck1R: url('./assets/duckR.svg');
-  --duck2L: url('./assets/duck2L.svg');
-  --duck2R: url('./assets/duck2R.svg');
-  --duck3L: url('./assets/duck3L.svg');
-  --duck3R: url('./assets/duck3R.svg');
-  --duck4L: url('./assets/duck4L.svg');
-  --duck4R: url('./assets/duck4R.svg');
-  --duck5L: url('./assets/duck5L.svg');
-  --duck5R: url('./assets/duck5R.svg');
+  --duck1L: url('./assets/img/duckL.svg');
+  --duck1R: url('./assets/img/duckR.svg');
+  --duck2L: url('./assets/img/duck2L.svg');
+  --duck2R: url('./assets/img/duck2R.svg');
+  --duck3L: url('./assets/img/duck3L.svg');
+  --duck3R: url('./assets/img/duck3R.svg');
+  --duck4L: url('./assets/img/duck4L.svg');
+  --duck4R: url('./assets/img/duck4R.svg');
+  --duck5L: url('./assets/img/duck5L.svg');
+  --duck5R: url('./assets/img/duck5R.svg');
 }
 
 body {
