@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@font-face {
+  font-family: 'Nokia';
+  src: url('/assets/nokiafc22.ttf');
+}
+:root {
+  --bg: #252E42;
+  --green: #97CF00;
+  --green-blue: #367684;
+  --pink: #BD4D93;
+  --yellow: #BDAB4D;
+  --blue: #0098DA;
+  --light: #ECEFF1;
+  --dark: #0E0E0E;
+  --dark70: #0E0E0EB3;
+  --bronze: #FF9D51;
+}
+
+body {
+  background: var(--bg);
+  margin: 0;
+}
+.container {
+  width: 95dvw;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 4rem 0;
+  
+  .button {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--dark70);
+    background: var(--green);
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    margin: 4rem 0 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 1rem var(--dark) inset, 0 0.25rem 1rem var(--dark70);
+  }
+  .section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    box-sizing: border-box;
+    &:first-child {
+      margin-bottom: 4rem;
+    }
+    .game-info-img, .how-to-play-img {
+      width: 15rem;
+      height: fit-content;
+    }
+    .game-info, .how-to-play {
+      width: 50%;
+      height: auto;
+      box-sizing: border-box;
+    }
+    .game-info-img, .how-to-play {
+      order: 1;
+    }
+    .game-info, .how-to-play-img {
+      order: 2;
+    }
+    .section-title {
+      font-family: 'Nokia', sans-serif;
+      font-size: 1.5rem;
+      color: var(--light);
+      text-shadow: 0.125rem 0 0 var(--pink),
+      -0.125rem -0.125rem 0 var(--green),
+      0.125rem 0.125rem 0 var(--blue);;
+    }
+    .section-info {
+      font-family: 'Aldrich', sans-serif;
+      font-size: 1rem;
+      color: var(--light);
+    }
+  }
+  .screens {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin: 4rem 0;
+    .screen {
+      filter: drop-shadow(0 0 1rem var(--dark));
+    }
+  }
+  .info {
+    width: 60%;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1rem;
+    color: var(--light);
+    text-align: center;
+    &>a {
+      text-decoration: none;
+      color: var(--green);
+    }
+    &>span {
+      color: var(--bronze);
+    }
+  }
+  .duck-glitch {
+    width: 17rem;
+    height: 12.5rem;
+    box-sizing: border-box;
+    
+  }
+}
+.ducks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  .duck {
+    height: 10rem;
+    width: 20%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:first-child {
+      background: var(--green);
+    }
+    &:nth-child(2) {
+      background: var(--green-blue);
+    }
+    &:nth-child(3) {
+      background: var(--pink);
+    }
+    &:nth-child(4) {
+      background: var(--yellow);
+    }
+    &:last-child {
+      background: var(--blue);
+    }
+  }
+}
+footer {
+  padding: 0.5rem 2rem;
+  & p {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1rem;
+    color: var(--light);
+    text-align: right;
+    & a {
+      text-decoration: none;
+      color: var(--green);
+    }
+  }
+}

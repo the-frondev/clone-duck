@@ -1,76 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clone PATO</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
   <div class="container">
-    <div class="frame">
-      <div class="top">
-        <div class="speaker">
-          <div class="hole"></div>
-          <div class="hole"></div>
-          <div class="hole"></div>
-        </div>
-        <div class="logo">FRONTDEV</div>
-        <div class="screen">
-          <div class="home">
-            <img id="game-name" src="./assets/clone_pato.png" alt="Clone Pato">
-            <p>by the_frontdev</p>
-            <img id="game-img" src="./assets/clone_pato_img.png" alt="clone pato">
-          </div>
-          <div class="difficulty hidden">
-            <img id="game-name" src="./assets/clone_pato.png" alt="Clone Pato">
-            <p>Elige la dificultad</p>
-            <div class="difficulty-item selected" data-difficulty="500">Toy Chiquito</div>
-            <div class="difficulty-item" data-difficulty="350">Lo jugué de niño</div>
-            <div class="difficulty-item" data-difficulty="200">Soy un pato</div>
-          </div>
-          <div class="game hidden">
-            <div class="game-details">
-              <p class="score">Score: <span id="score">0</span></p>
-              <p class="high-score">High Score: <span id="high-score">0</span></p>
-            </div>
-            <div class="play-board">
-            </div>
-          </div>
-          <div class="game-over hidden">
-            <img src="./assets/skull.svg" alt="Game Over">
-            <p class="game-over-title">GAME OVER</p>
-            <p class="game-over-score">Tu puntuación fue: <span id="go-score"></span></p>
-          </div>
-        </div>
-        <p id="model">N-3310</p>
-        <div class="oval">
-          <button class="key" data-key="Enter">
-            <div id="enter-symbol"></div>
-          </button>
-        </div>
-      </div>
-      <div class="sound-buttons">
-        <button id="sound-on">
-          <img src="./assets/icons8-voice-48.png" alt="sound-on">
-        </button>
-        <button id="sound-off">
-          <img src="./assets/icons8-sound-off-48.png" alt="sound-off">
-        </button>
-      </div>
-      <div class="bottom">
-        <div class="buttons">
-          <button class="key" data-key="ArrowUp">&#8593;</button>
-          <div class="left-right">
-            <button class="key" data-key="ArrowLeft">&#8592;</button>
-            <button class="key" data-key="ArrowRight">&#8594;</button>
-          </div>
-          <button class="key" data-key="ArrowDown">&#8595;</button>
-        </div>
-      </div>
+    <img src="./assets/img/Group 164.png" alt="Clone PATO" class="hero">
+    <a href="./game.html" target="_blank" rel="noopener noreferrer" class="button">JUÉGALO AQUÍ</a>
+  </div>
+  <div class="ducks">
+    <div class="duck">
+      <img src="./assets/img/duckL.svg" alt="">
+    </div>
+    <div class="duck">
+      <img src="./assets/img/duck2L.svg" alt="">
+    </div>
+    <div class="duck">
+      <img src="./assets/img/duck3L.svg" alt="">
+    </div>
+    <div class="duck">
+      <img src="./assets/img/duck4L.svg" alt="">
+    </div>
+    <div class="duck">
+      <img src="./assets/img/duck5L.svg" alt="">
     </div>
   </div>
-  <div id="difficulty" data-delay="500" style="display:none;"></div>
+  <div class="container">
+    <section class="section">
+      <img class="game-info-img" src="./assets/img/Group 163.png" alt="Clone PATO">
+      <div class="game-info">
+        <h2 class="section-title">CLONE PATO</h2>
+        <p class="section-info">
+          ¡Los patos se han adueñado de todo! Incluso de aquel entrañable juego "Snake" que jugábamos de niños. Ahora,
+          un pato que vive en un viejo laboratorio olvidado, ha encontrado un hongo radioactivo en la sala de clonación.
+          Este hongo ha hecho que cambie de forma y además se duplique, generando un clon que lo sigue a todos lados.
+          <br>
+          A medida que consume más hongos, la línea de patos se vuelve más larga y se mueve de forma más veloz,
+          aumentando el riesgo de chocar contra los límites de la sala e incluso contra la propia línea de patos clones.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="how-to-play">
+        <h3 class="section-title">¿CÓMO SE JUEGA?</h3>
+        <p class="section-info">
+          Tendrás que utilizar las flechas del teclado, o en su defecto los botones con las flechas para moverte a
+          través de la pantalla.
+          <br>
+          Ten en cuenta que conforme vas consumiendo más hongos, la velocidad del juego aumentará.
+          <br>
+          Tu objetivo es consumir la mayor cantidad de hongos posible, pero debes tener cuidado, ya que si chocas contra
+          los límites de la sala o contra la línea de clones, el juego termina. ¡Demuestra tus habilidades para guiar a
+          esta línea de patos en constante cambio y establece el récord más alto!
+        </p>
+      </div>
+      <img class="how-to-play-img" src="./assets/img/Vector.png">
+    </section>
+    <div class="screens">
+      <img src="./assets/img/Mask group.png" alt="Splash screen" class="screen">
+      <img src="./assets/img/Mask group-1.png" alt="Difficulty screen" class="screen">
+      <img src="./assets/img/Mask group-2.png" alt="Game screen" class="screen">
+      <img src="./assets/img/Mask group-3.png" alt="Game over screen" class="screen">
+    </div>
+    <p class="info">
+      <strong>CLONE PATO</strong> es juego que se hizo con mucho amor, CSS puro y JavaScript Vanilla durante los streams
+      del canal de twitch <a href="https://twitch.tv/the_frontdev" target="_blank"
+        rel="noopener noreferrer"><strong>the_frontdev</strong></a>, con el objetivo de participar en la <a
+        href="https://kurojam.com" target="_blank" rel="noopener noreferrer">KuroJam</a>, en la cual obtuvo el <span>3er
+        puesto</span>, si te interesa ver el código fuente, lo tienes aquí: <a
+        href="https://github.com/the-frondev/clone-suck" target="_blank" rel="noopener noreferrer">Github</a>
+    </p>
+  </div>
+  <footer>
+    <p>Made with ❤️ by <a href="https://thefront.dev" target="_blank" rel="noopener noreferrer">the_frontdev</a></p>
+  </footer>
 </body>
+
 </html>
