@@ -8,15 +8,15 @@
   --gray: #DDDDDD;
   --screen: #97CF00;
   --duck1L: url('./assets/img/duckL.svg');
-  --duck1R: url('/assets/img/duckR.svg');
-  --duck2L: url('/assets/img/duck2L.svg');
-  --duck2R: url('/assets/img/duck2R.svg');
-  --duck3L: url('/assets/img/duck3L.svg');
-  --duck3R: url('/assets/img/duck3R.svg');
-  --duck4L: url('/assets/img/duck4L.svg');
-  --duck4R: url('/assets/img/duck4R.svg');
-  --duck5L: url('/assets/img/duck5L.svg');
-  --duck5R: url('/assets/img/duck5R.svg');
+  --duck1R: url('./assets/img/duckR.svg');
+  --duck2L: url('./assets/img/duck2L.svg');
+  --duck2R: url('./assets/img/duck2R.svg');
+  --duck3L: url('./assets/img/duck3L.svg');
+  --duck3R: url('./assets/img/duck3R.svg');
+  --duck4L: url('./assets/img/duck4L.svg');
+  --duck4R: url('./assets/img/duck4R.svg');
+  --duck5L: url('./assets/img/duck5L.svg');
+  --duck5R: url('./assets/img/duck5R.svg');
 }
 
 body {
