@@ -17,6 +17,7 @@
   --duck4R: url('./assets/img/duck4R.svg');
   --duck5L: url('./assets/img/duck5L.svg');
   --duck5R: url('./assets/img/duck5R.svg');
+  --hongo: url('./assets/img/duckL.svg');
 }
 
 body {
@@ -134,11 +135,11 @@ body {
             grid-template: repeat(20, 1fr) / repeat(30, 1fr);
 
             .duck {
-              background: url('/assets/duck1L.svg') no-repeat center center/contain;
+              background: var(--duck1L) no-repeat center center/contain;
             }
 
             .food {
-              background: url('./assets/img/hongo.svg') no-repeat center center/contain;
+              background: var(--hongo) no-repeat center center/contain;
             }
           }
         }
